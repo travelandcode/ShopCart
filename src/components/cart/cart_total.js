@@ -28,10 +28,12 @@ function CartTotal(){
         const date = new Date(currentDate);
         date.setDate(currentDate.getDate() + (isExpress ? 7 : 14) )
         const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        const weekday = weekDays[date.getDay()]
         const month = monthNames[date.getMonth()];
         const day = date.getDate();
         const year = date.getFullYear();
-        return `${month} ${day}, ${year}`;
+        return `${weekday}, ${month} ${day}, ${year}`;
     }
 
     const subTotal = cartProducts.reduce((total, cartItem) => {

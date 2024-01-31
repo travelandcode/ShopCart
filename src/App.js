@@ -4,7 +4,7 @@ import Home from './pages/home.js'
 import Cart from './pages/cart.js'
 import { CartProvider } from './providers/cart_provider.js';
 import { ProductProvider } from './providers/product_provider.js';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { UserProvider } from './providers/user_provider.js';
 import Product from './pages/store_product.js';
 import Success from './pages/success.js';

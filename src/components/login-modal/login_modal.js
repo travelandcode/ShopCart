@@ -129,7 +129,7 @@ function LoginModal(props){
               <h3 className="[ shopcart-txt ][ flex justify-center ][ text-[32px] text-[#161823] font-bold font-sans ][ mt-8 mb-4 ][ mx-auto ]">Log in to Shopcart</h3>
               <div className="[ mx-auto ][ flex flex-col ][ w-full ][ space-y-4 m-4 ][ text-[15px] ]">
                 {loginButtons.map(button =>(
-                    <LoginModalButton  link={button.link} svg={button.svgData} txt={button.txt} />
+                    <LoginModalButton   link={button.link} svg={button.svgData} txt={button.txt} />
                   ))
                 }
               </div>
